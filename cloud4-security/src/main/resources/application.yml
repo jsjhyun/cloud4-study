@@ -1,0 +1,47 @@
+spring:
+
+  ## JPA
+  jpa:
+    # 전송 쿼리 확인
+    show-sql: true
+    properties:
+      hibernate:
+        ddl-auto: update
+        format_sql: true
+
+  ## H2
+  h2:
+    console:
+      enabled: true
+
+  datasource: # 데이터베이스 정보 추가
+    url: jdbc:h2:mem:testdb
+    username: sa
+    driver-class-name: org.h2.Driver
+
+  ## Google OAuth2
+#  security:
+#    oauth2:
+#      client:
+#        registration:
+#          google:
+#            client-id: 클라이언트아이디
+#            client-secret: 클라이언트암호
+#            scope:
+#              - email
+#              - profile
+#            redirect-uri: "http://localhost:8080/login/oauth2/code/google"
+#            client-name: Google
+#        provider:
+#          google:
+#            authorization-uri: https://accounts.google.com/o/oauth2/auth
+#            token-uri: https://oauth2.googleapis.com/token
+#            user-info-uri: https://www.googleapis.com/oauth2/v3/userinfo
+
+## JWT
+jwt:
+  secret: "zJf3VY8whF9OGkNhdMjf3Lx6jqFwG6kLcv3zjX3FSkQ=" ##32byte 이상
+  token:
+    refresh-expires: 1200000 # 20분
+    access-expires: 600000 # 10분
+

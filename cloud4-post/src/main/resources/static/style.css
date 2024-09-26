@@ -1,0 +1,23 @@
+#title {
+    background-color: darkblue;
+    color: white;
+}
+
+.list-item {
+    color: darkred;
+}
+
+.selected {
+    font-weight: 900;
+    font-size: large;
+}
+
+ol {
+    color: darkblue;
+}
+
+p {
+    font-weight: 900;
+    background-color: yellowgreen;
+}
+
