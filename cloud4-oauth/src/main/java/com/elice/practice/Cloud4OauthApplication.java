@@ -6,9 +6,9 @@ import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 
 @EnableJpaAuditing
 @SpringBootApplication
-public class SpringBootDeveloperApplication {
+public class Cloud4OauthApplication {
     public static void main(String[] args) {
-        SpringApplication.run(SpringBootDeveloperApplication.class, args);
+        SpringApplication.run(Cloud4OauthApplication.class, args);
     }
 }
 

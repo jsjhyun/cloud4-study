@@ -21,11 +21,11 @@ spring:
       client:
         registration:
           google:
-            client-id: 1050428828521-fjhartqbnde1b2ano4emal6f5o6jc735.apps.googleusercontent.com
-            client-secret: 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
+            client-id: ${GOOGLE_CLIENT_ID}
+            client-secret: ${GOOGLE_CLIENT_SECRET}
             scope:
               - email
               - profile
 jwt:
   issuer: jsjhyun98@kakao.com
-  secret_key: springboot-13chapter-oauth
+  secret_key: ${JWT_SECRET_KEY}
