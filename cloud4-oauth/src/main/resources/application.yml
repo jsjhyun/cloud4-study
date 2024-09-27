@@ -1,0 +1,31 @@
+spring:
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+    defer-datasource-initialization: true
+  datasource:
+    url: jdbc:h2:mem:testdb
+    username: sa
+  h2:
+    console:
+      enabled: true
+  thymeleaf:
+    prefix: classpath:/templates/
+    cache: false
+  freemarker:
+    cache: false
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: 1050428828521-fjhartqbnde1b2ano4emal6f5o6jc735.apps.googleusercontent.com
+            client-secret: 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
+            scope:
+              - email
+              - profile
+jwt:
+  issuer: jsjhyun98@kakao.com
+  secret_key: springboot-13chapter-oauth
